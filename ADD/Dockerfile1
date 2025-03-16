@@ -1,0 +1,4 @@
+FROM alalinux:9
+RUN dnf install nginx -y
+ADD sample.tar /tmp/
+CMD ["nginx", "-g", "daemon off;"]
